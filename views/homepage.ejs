@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/btimer.css">
+    <link rel="stylesheet" href="css/webpage.css">
+
+    <title>Document</title>
+</head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="/webpage">Sunny Webpage</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="/Home">Todolist📋</a></li>
+                        <li><a href="/timer">Timer⏱</a></li>
+                        <li><a href="/btimer">Birthday timer🎂</a></li>
+                        <li><a href="/map">Maps🗺</a></li>
+                        <li><a href="/weather">Check Weather🌪</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        
+        <section class="home">
+        </section>
+
+        <div id = "container" class= "center">
+            
+            <div id ="hours" class="display">
+                <p class = "caption">Hours</p>
+                <p class ="timer box">00</p>
+            </div>
+            <div  class="display">
+                <p class ="timer box">:</p>
+            </div>
+            <div id ="minutes" class="display">
+                <p class = "caption">Minutes</p>
+                <p class ="timer box">00</p>
+            </div>
+            <div  class="display">
+                <p class ="timer box">:</p>
+            </div>
+            <div id ="seconds" class="display">
+                <p class = "caption">Seconds</p>
+                <p class ="timer box">00</p>
+            </div>
+        </div>
+        
+        <script src ="js/homepage.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/webpage.js"></script>
+        
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                    
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        
+        
+    </body>
+</html>

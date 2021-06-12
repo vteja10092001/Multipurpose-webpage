@@ -1,0 +1,55 @@
+*{
+    margin:0em;
+    padding:0em;
+    box-sizing: border-box;
+}
+/* body{
+    background: linear-gradient(to bottom,#021b79,#0575e6);
+    height:100vh;
+} */
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+#container{
+    max-width: 750px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.box{
+    padding: 1rem;
+    margin: 0.2rem;
+    /* background-color: #00008b;
+    opacity: 80%; */
+    /* box-shadow: 0 0 10px#00008b; */
+    border-radius: 10px;
+    text-align: center;
+}
+.timer{
+    font-size: 10rem;
+    color:white;
+    font-weight: 400;
+    font-family: 'Times New Roman', serif;
+}
+.caption{
+    color:white;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2rem
+}
+#expired{
+    display:none;
+    font-size: 1.5rem;
+    color: white;
+}
+@media all and (max-width:700px){
+	.timer{
+        font-size: 5rem;
+    }
+    .box{
+        padding: 0.5rem;
+    }
+}

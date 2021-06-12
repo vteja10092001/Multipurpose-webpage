@@ -1,0 +1,36 @@
+<%- include("header")-%>
+<div class="logout">
+  <a href="/logout" class="btn btn-info btn-lg">
+    <span class="glyphicon glyphicon-log-out"></span> Log out
+  </a>
+</div>
+      <div class="col-4 box headingbox" id="heading"> 
+        
+        <h1><%=listTitle%></h1>
+      </div>
+    <div class="box">
+      
+      
+      <% newListItems.forEach(item => { %>
+          <div class="item">   
+           <form action="/delete" method="POST">
+            <input type="checkbox" name="checkbox" value=<%=item._id%> onChange="this.form.submit()">
+            <input type="hidden" name="listname" value="<%=listTitle%>">
+           </form>
+           
+            <p><%=item.name%></p>
+            </div>
+
+        
+     <% }); %> 
+     
+
+            <form class="submit" action="/Home" method="POST">
+                <input type="text" name="newItem" placeholder="New Item" autocomplete="off" />
+                <button type="submit" value="<%=listTitle%>" name="list">+</button>
+              </form>
+    
+    </div>
+    
+   
+<%-include("footer")-%>

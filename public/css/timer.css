@@ -1,0 +1,19 @@
+#contianer{
+    text-align: center;
+    margin: 300px 0px 0px 0px;
+    height: 60vh;
+}
+body{
+    background-color: #36d1dc;
+    
+    background-image: linear-gradient(orange, yellow);
+}
+p{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.2rem;
+}

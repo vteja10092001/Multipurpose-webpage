@@ -108,11 +108,7 @@ app.get("/signup",(req,res)=>{
 
 
 app.get("/Home",(req,res)=>{
-  const user_id = req.user.id;
-  User.findById(user_id,(err,foundItems)=>{
-    res.render("list",{listTitle:_.capitalize(foundItems.username) + " To Do LIST",newListItems:foundItems.items})
-  })
-
+  res.render("btimerclone")
 })
 
 app.get("/auth/google",passport.authenticate("google", { scope: ["profile"] }));

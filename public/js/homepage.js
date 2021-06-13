@@ -18,7 +18,7 @@ function countdown(){
         s = "0"+s;
     }
     if(hr<=9){
-        hr = "0"+hr+":";
+        hr = "0"+hr;
     }
     // else{
     //     hr=hr+" :";
